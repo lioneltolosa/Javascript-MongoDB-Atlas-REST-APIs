@@ -206,8 +206,14 @@ app.use(errorHelper.clientErrorHandler);
 // Configure catch-all exception middleware last
 app.use(errorHelper.errorHandler); */
 
-const PORT = process.env.PORT || 5000;
+/* const PORT = process.env.PORT || 5000;
 
 var server = app.listen(PORT, () => {
     console.log('Node server is running on http://localhost:5000');
-});
+}); */
+
+const PORT = process.env.PORT || 3003
+
+app.listen(PORT, () => {
+  console.log("Server is up and listening on: " + PORT)
+})
