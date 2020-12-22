@@ -61,7 +61,7 @@ db.initialize(dbName, collectionName, (dbCollection) => {
 
 // Create GET to return a list of all pies
 
-
+/* 
 // Create GET/search?id=n&name=str to search for pies by 'id' and/or 'name'
 router.get('/search', function (req, res, next) {
     let searchObject = {
@@ -204,10 +204,10 @@ app.use(errorHelper.logErrors);
 // Configure client error handler
 app.use(errorHelper.clientErrorHandler);
 // Configure catch-all exception middleware last
-app.use(errorHelper.errorHandler);
+app.use(errorHelper.errorHandler); */
 
 const PORT = process.env.PORT || 5000;
 
 var server = app.listen(PORT, () => {
-    console.log('Node server is running on http://localhost:5000..' + PORT);
+    console.log('Node server is running on http://localhost:5000');
 });
