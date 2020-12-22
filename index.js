@@ -206,7 +206,7 @@ app.use(errorHelper.clientErrorHandler);
 // Configure catch-all exception middleware last
 app.use(errorHelper.errorHandler); */
 
-app.use('/api/', router);
+app.use(router);
 
 const PORT = process.env.PORT || 5000;
 
